@@ -1,0 +1,1 @@
+alert("Weclome to the page!")
