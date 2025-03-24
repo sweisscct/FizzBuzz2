@@ -4,6 +4,8 @@
  */
 package fizzbuzz2;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Lecturer
@@ -22,6 +24,31 @@ public class FizzBuzz2 {
         If a number is divisible by both, print FizzBuzz
         
         */
+        System.out.println("Welcome to fizzBuzz please enter a number to start");
+        Scanner scanner = new Scanner(System.in);
+        int choice;
+        while (true) {
+            if (scanner.hasNextInt()) { 
+                choice = scanner.nextInt();
+                break; 
+            } else {
+                System.out.println("Invalid input! Please enter a valid integer:");
+                scanner.next(); 
+            }
+        }
+        
+        if (choice % 3 == 0 && choice % 5 == 0) {
+            System.out.println("FizzBuzz");
+        } else if (choice % 3 == 0) {
+            System.out.println("Fizz");
+        } else if (choice % 5 == 0) {
+            System.out.println("Buzz");
+        } else {
+            System.out.println("its not divisible by 3 or 5 ");
+        }
+        
+        scanner.close();
     }
+       
     
 }
