@@ -20,6 +20,7 @@ public class FizzBuzz2 {
         If a number is divisible by 3, print Fizz
         If a number is divisible by 5, print Buzz
         If a number is divisible by both, print FizzBuzz
+        test123
         
         */
     }
