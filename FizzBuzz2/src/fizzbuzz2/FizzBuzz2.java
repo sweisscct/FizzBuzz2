@@ -20,8 +20,26 @@ public class FizzBuzz2 {
         If a number is divisible by 3, print Fizz
         If a number is divisible by 5, print Buzz
         If a number is divisible by both, print FizzBuzz
+       
         
         */
+        
+            for(int i = 0; i <= 150; i++){
+                if(i % 3 == 0){
+                    System.out.println("Fizz = " + i);
+                            
+                }
+                else if(i % 5 == 0){
+                    System.out.println("Buzz = " + i);
+                }
+                else{
+                    System.out.println("FizzBuzz");
+                }
+            }
+        
+           
+        
+        
     }
     
 }
