@@ -10,45 +10,42 @@ import java.util.Scanner;
  *
  * @author Lecturer
  */
-public class FizzBuzz2 {
+import java.util.Scanner;
 
-    /**
-     * @param args the command line arguments
-     */
+public class FizzBuzz2 {
     public static void main(String[] args) {
-        /*
-        FizzBuzz
-        Print the numbers between 1 and 150
-        If a number is divisible by 3, print Fizz
-        If a number is divisible by 5, print Buzz
-        If a number is divisible by both, print FizzBuzz
-        
-        */
-        System.out.println("Welcome to fizzBuzz please enter a number to start");
         Scanner scanner = new Scanner(System.in);
-        int choice;
+       
+        
+
+
+        System.out.println("Welcome to fizzBuzz please enter a number to start");
         while (true) {
             if (scanner.hasNextInt()) { 
-                choice = scanner.nextInt();
+                number = scanner.nextInt();
                 break; 
             } else {
                 System.out.println("Invalid input! Please enter a valid integer:");
                 scanner.next(); 
             }
         }
-        
-        if (choice % 3 == 0 && choice % 5 == 0) {
-            System.out.println("FizzBuzz");
-        } else if (choice % 3 == 0) {
-            System.out.println("Fizz");
-        } else if (choice % 5 == 0) {
-            System.out.println("Buzz");
-        } else {
-            System.out.println("its not divisible by 3 or 5 ");
-        }
-        
         scanner.close();
-    }
+       
        
     
+
+        if (number % 3 == 0 && number % 5 == 0) {
+            System.out.println("FizzBuzz");
+        } else if (number % 3 == 0) {
+            System.out.println("Fizz");
+        } else if (number % 5 == 0) {
+            System.out.println("Buzz");
+        } else {
+            System.out.println("try again");
+        }
+    }
+
 }
+
+    
+
