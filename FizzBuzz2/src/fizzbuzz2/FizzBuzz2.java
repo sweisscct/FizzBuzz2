@@ -22,6 +22,17 @@ public class FizzBuzz2 {
         If a number is divisible by both, print FizzBuzz
         
         */
+        int iterator = 1;                                                                                                   
+        while (iterator < 150){                                                                                             
+            if (iterator % 3 == 0 && iterator % 5 == 0){                                                                    
+                System.out.println(iterator + " FizzBuzz");                                                                 
+            } else if (iterator % 3 == 0){                                                                                  
+                System.out.println(iterator + " Fizz");                                                                     
+            } else if (iterator % 5 == 0) {                                                                                 
+                System.out.println(iterator + " Buzz");                                                                     
+            }                                                                                                               
+            iterator++;                                                                                                     
+        }
     }
     
 }
