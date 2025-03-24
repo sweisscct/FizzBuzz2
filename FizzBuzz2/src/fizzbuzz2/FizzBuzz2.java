@@ -22,6 +22,22 @@ public class FizzBuzz2 {
         If a number is divisible by both, print FizzBuzz
         
         */
+        
+        int currentNumber; 
+        
+        for(int i=0; i<=149; i++){
+        currentNumber = i + 1;
+        
+        if (currentNumber%3 == 0 && currentNumber%5 ==0){
+            System.out.println("FizzBuzz \n");
+        } else if(currentNumber%3 == 0){
+            System.out.println("Fizz \n");
+        }else if(currentNumber%5 == 0){
+            System.out.println("Buzz \n");
+        }else {
+            System.out.println(currentNumber + "\n");
+        }
+        }
     }
     
 }
